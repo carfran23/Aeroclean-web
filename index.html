@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroClean EC | Limpieza Técnica con Drones Industriales en Ecuador</title>
+  <meta name="description" content="Limpieza de techos, fachadas y paneles solares con drones industriales en Ecuador. Rápido, seguro y sin mano de obra en altura.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#030f23',
+              navy: '#071f43',
+              card: '#0a2552',
+              cyan: '#00b4d8',
+              lime: '#6cf317',
+              limeDark: '#4ec607'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Fuente Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glow-lime { box-shadow: 0 0 25px rgba(108, 243, 23, 0.4); }
+    .glow-cyan { box-shadow: 0 0 25px rgba(0, 180, 216, 0.3); }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-lime selection:text-black">
+
+  <!-- ==================== ENCABEZADO / NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo Oficial -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="img/logo.jpg" alt="Logo AeroClean EC" class="h-12 w-auto object-contain hover:scale-105 transition-transform rounded-lg">
+        <span class="text-xl font-black tracking-wider text-white hidden sm:inline-block">AEROCLEAN <span class="text-brand-lime">EC</span></span>
+      </a>
+
+      <!-- Menú -->
+      <nav class="hidden md:flex items-center gap-7 font-semibold text-sm text-slate-300">
+        <a href="#beneficios" class="hover:text-brand-lime transition-colors">Beneficios</a>
+        <a href="#servicios" class="hover:text-brand-lime transition-colors">Servicios</a>
+        <a href="#comparativa" class="hover:text-brand-lime transition-colors">Comparativa</a>
+        <a href="#oferta" class="hover:text-brand-lime transition-colors">Promoción $60</a>
+        <a href="#calculadora" class="hover:text-brand-lime transition-colors">Cotizador</a>
+        <a href="#cobertura" class="hover:text-brand-lime transition-colors">Cobertura</a>
+      </nav>
+
+      <!-- Botón WhatsApp -->
+      <a href="https://wa.me/593981627500?text=Hola%20AeroClean%20EC,%20deseo%20cotizar%20un%20servicio%20de%20limpieza" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-lime text-black font-extrabold text-sm hover:bg-lime-400 transition-all glow-lime">
+        <i data-lucide="phone-call" class="w-4 h-4"></i>
+        <span>+593 98 162 7500</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative pt-28 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-cyan/20 blur-[140px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-navy border border-cyan-500/30 text-brand-lime text-xs font-bold tracking-wide uppercase mb-6">
+            <span class="w-2 h-2 rounded-full bg-brand-lime animate-ping"></span>
+            Limpieza Técnica de Fachadas y Estructuras
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-6">
+            TU TECHO COMO NUEVO <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-slate-100 to-brand-lime">
+              SIN PISAR NI DAÑAR TUS TEJAS
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-lg font-normal mb-8 leading-relaxed">
+            Tecnología con Drones Industriales y Sistema de Alta Presión. Limpieza en tiempo récord, con control 100% desde tierra y sin riesgos laborales.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/593981627500?text=Hola,%20deseo%20solicitar%20una%20evaluación%20gratuita%20para%20mi%20inmueble" target="_blank" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-brand-lime text-black font-extrabold text-base flex items-center justify-center gap-3 hover:bg-lime-400 transition-all glow-lime">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span>Solicita una Evaluación</span>
+            </a>
+            <a href="#calculadora" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="calculator" class="w-5 h-5 text-brand-cyan"></i>
+              <span>Calcular Precio</span>
+            </a>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-around text-center">
+            <div>
+              <div class="text-brand-lime font-black text-xl">Más Seguridad</div>
+              <div class="text-xs text-slate-400">Menos intervención en altura</div>
+            </div>
+            <div class="border-l border-slate-800 h-8"></div>
+            <div>
+              <div class="text-brand-cyan font-black text-xl">Más Eficiencia</div>
+              <div class="text-xs text-slate-400">Control desde tierra</div>
+            </div>
+            <div class="border-l border-slate-800 h-8"></div>
+            <div>
+              <div class="text-white font-black text-xl">Innovación</div>
+              <div class="text-xs text-slate-400">Tecnología profesional</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen Hero -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="relative group rounded-3xl overflow-hidden border-2 border-brand-cyan/40 glow-cyan max-w-md shadow-2xl">
+            <img src="img/hero.png" alt="Limpieza Aérea Inteligente con Drone AeroClean EC" class="w-full h-auto object-cover transform group-hover:scale-102 transition-transform duration-500">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/70 to-transparent p-5 text-center">
+              <span class="text-brand-lime font-black text-sm uppercase tracking-wider">Un Ecuador más limpio</span>
+              <p class="text-xs text-slate-300">Edificios • Techos • Paneles solares • Vallas</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OFERTA RESIDENCIAL ($60 USD) ==================== -->
+  <section id="oferta" class="py-16 bg-slate-950 border-y border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-brand-navy via-slate-900 to-brand-navy rounded-3xl border border-brand-cyan/50 overflow-hidden shadow-2xl">
+        <div class="grid lg:grid-cols-12 items-center">
+          
+          <div class="lg:col-span-5 p-4 sm:p-6 flex justify-center">
+            <img src="img/precios.jpeg" alt="Oferta residencial $60 dólares AeroClean EC" class="rounded-2xl max-h-[480px] w-auto shadow-xl border border-slate-700">
+          </div>
+
+          <div class="lg:col-span-7 p-6 sm:p-10">
+            <div class="inline-block bg-brand-lime text-black text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider mb-4">
+              ¡Cupos Limitados!
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">OFERTA RESIDENCIAL ESPECIAL</h2>
+            <p class="text-brand-cyan font-bold text-base mb-6">Promoción activa en: Ambato, Riobamba y Puyo</p>
+
+            <div class="flex items-baseline gap-4 mb-6">
+              <span class="text-5xl font-black text-brand-lime">$60 <span class="text-lg text-slate-300 font-bold">USD</span></span>
+              <span class="text-slate-400 text-sm">Hasta techos de <strong>120 m²</strong></span>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 mb-8 text-sm text-slate-200">
+              <div class="flex items-center gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-lime shrink-0"></i>
+                <span>Sin pisar cubiertas (Cero filtraciones)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-lime shrink-0"></i>
+                <span>Elimina moho, musgo y suciedad</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-lime shrink-0"></i>
+                <span>Inspección previa con cámara HD</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-lime shrink-0"></i>
+                <span>Proceso rápido y seguro</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/593981627500?text=Hola%20AeroClean,%20quiero%20aprovechar%20la%20promoción%20de%20$60%20USD%20para%20mi%20techo" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-brand-cyan hover:bg-cyan-400 text-slate-950 font-black text-base transition-all">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Reclamar Promoción por WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICIOS ==================== -->
+  <section id="servicios" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-lime font-bold text-xs uppercase tracking-widest">Nuestra Especialidad</span>
+        <h2 class="text-3xl sm:text-5xl font-black mt-2">Soluciones con Tecnología Aérea</h2>
+        <p class="text-slate-400 mt-3 text-base">Hogares, Empresas, Hoteles, Edificios y Sector Público.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta 1: Techos Residenciales -->
+        <div class="bg-brand-navy rounded-3xl overflow-hidden border border-slate-800 hover:border-brand-lime transition-all flex flex-col justify-between group shadow-xl">
+          <div class="overflow-hidden">
+            <img src="img/techos.png" alt="Techos Residenciales AeroClean" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-black text-white mb-2">Techos Residenciales</h3>
+            <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+              Tecnología que cuida tu hogar. Sin caminar sobre el techo, con resultado visible de antes y después. Alarga la vida útil de tus tejas.
+            </p>
+            <a href="https://wa.me/593981627500?text=Hola,%20deseo%20cotizar%20la%20limpieza%20de%20techos%20residenciales" target="_blank" class="w-full py-3 rounded-xl bg-brand-lime/10 text-brand-lime font-bold border border-brand-lime/30 flex items-center justify-center gap-2 hover:bg-brand-lime hover:text-black transition-all">
+              <span>Cotizar Residencial</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Fachadas y Edificios -->
+        <div class="bg-brand-navy rounded-3xl overflow-hidden border border-slate-800 hover:border-brand-cyan transition-all flex flex-col justify-between group shadow-xl">
+          <div class="overflow-hidden">
+            <img src="img/fachadas.png" alt="Fachadas y Edificios AeroClean" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-black text-white mb-2">Fachadas y Edificios</h3>
+            <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+              Limpieza aérea de alto nivel para vidrios, ventanales y estructuras altas. Ideal para hoteles, clínicas y edificios corporativos sin andamios.
+            </p>
+            <a href="https://wa.me/593981627500?text=Hola,%20deseo%20cotizar%20la%20limpieza%20de%20fachada%20o%20edificio" target="_blank" class="w-full py-3 rounded-xl bg-brand-cyan/10 text-brand-cyan font-bold border border-brand-cyan/30 flex items-center justify-center gap-2 hover:bg-brand-cyan hover:text-black transition-all">
+              <span>Cotizar Edificio</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Paneles Solares -->
+        <div class="bg-brand-navy rounded-3xl overflow-hidden border border-slate-800 hover:border-brand-lime transition-all flex flex-col justify-between group shadow-xl">
+          <div class="overflow-hidden">
+            <img src="img/paneles.png" alt="Paneles Solares AeroClean" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-black text-white mb-2">Paneles Solares</h3>
+            <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+              Mantenimiento especializado que protege tu inversión. Más rendimiento, más ahorro y más vida útil con lavado delicado y de precisión.
+            </p>
+            <a href="https://wa.me/593981627500?text=Hola,%20deseo%20mantenimiento%20para%20paneles%20solares" target="_blank" class="w-full py-3 rounded-xl bg-brand-lime/10 text-brand-lime font-bold border border-brand-lime/30 flex items-center justify-center gap-2 hover:bg-brand-lime hover:text-black transition-all">
+              <span>Cotizar Paneles</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPARATIVA VISUAL ==================== -->
+  <section id="comparativa" class="py-20 bg-slate-950 border-t border-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="rounded-3xl overflow-hidden border-2 border-brand-lime glow-lime shadow-2xl">
+            <img src="img/comparativa.png" alt="Tradicional vs AeroClean EC" class="w-full h-auto">
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <span class="text-brand-lime font-bold text-xs uppercase tracking-widest">¿Por qué cambiar?</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white mt-1 mb-6">Mismo resultado, un mejor camino</h2>
+
+          <div class="space-y-6">
+            <div class="bg-red-950/20 border border-red-500/30 p-5 rounded-2xl">
+              <h4 class="font-bold text-red-400 flex items-center gap-2 mb-2">
+                <i data-lucide="x" class="w-5 h-5"></i> Método Tradicional Manual
+              </h4>
+              <p class="text-sm text-slate-300">
+                Requiere más preparación, más personal colgado de cuerdas, riesgo grave de caídas, rotura de tejas al pisarlas y días enteros de trabajo.
+              </p>
+            </div>
+
+            <div class="bg-brand-navy border border-brand-lime/50 p-5 rounded-2xl glow-lime">
+              <h4 class="font-bold text-brand-lime flex items-center gap-2 mb-2">
+                <i data-lucide="check" class="w-5 h-5"></i> Método AeroClean EC
+              </h4>
+              <p class="text-sm text-slate-200">
+                Control 100% desde tierra con telemetría en tiempo real, menos intervención en altura, sin tocar tus cubiertas y finalizado en horas.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/593981627500?text=Hola,%20quisiera%20descubrir%20la%20diferencia%20con%20AeroClean%20EC" target="_blank" class="px-8 py-3.5 rounded-xl bg-brand-lime text-black font-extrabold inline-flex items-center gap-2 hover:bg-lime-400 transition-all">
+              <span>Descubre la diferencia</span>
+              <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CALCULADORA INTERACTIVA ==================== -->
+  <section id="calculadora" class="py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-b from-brand-navy to-slate-950 p-8 sm:p-10 rounded-3xl border border-brand-cyan/40 glow-cyan">
+        <div class="text-center mb-8">
+          <span class="text-brand-lime font-bold text-xs uppercase tracking-widest">Cotizador Rápido</span>
+          <h2 class="text-3xl font-black text-white mt-1">Calcula tu Inversión</h2>
+          <p class="text-slate-400 text-sm mt-2">Mueve la barra para estimar el costo de limpieza según los m².</p>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <label class="block text-xs uppercase font-bold text-slate-300 mb-2">Tipo de Inmueble</label>
+            <select id="tipoServicio" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold">
+              <option value="techo">Techo Residencial (Tejas / Zinc)</option>
+              <option value="fachada">Fachada de Edificio / Ventanales</option>
+              <option value="solar">Paneles Solares</option>
+              <option value="industrial">Galpón Industrial / Valla Publicitaria</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs uppercase font-bold text-slate-300">Área estimada</label>
+              <span id="valorMetros" class="text-brand-lime font-black text-xl">120 m²</span>
+            </div>
+            <input type="range" id="metrosRange" min="50" max="800" step="10" value="120" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-lime">
+          </div>
+
+          <div class="p-6 rounded-2xl bg-black/60 border border-slate-800 text-center">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block">Valor Referencial Estimado:</span>
+            <div class="text-5xl font-black text-brand-lime mt-1" id="precioEstimado">$60 USD</div>
+            <p class="text-[11px] text-slate-500 mt-2">*Precio base referencial. Puede variar según grado de adherencia y ubicación exacta.</p>
+          </div>
+
+          <button id="btnCotizarWsp" class="w-full py-4 rounded-xl bg-brand-lime text-black font-black flex items-center justify-center gap-2 hover:bg-lime-400 transition-all glow-lime">
+            <i data-lucide="send" class="w-5 h-5"></i>
+            <span>Enviar Cotización a WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COBERTURA ==================== -->
+  <section id="cobertura" class="py-16 bg-slate-950 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest">Cobertura a Nivel Nacional</span>
+      <h2 class="text-3xl font-black mt-2 mb-4">Llegamos a todo el Ecuador</h2>
+      <p class="text-slate-400 max-w-xl mx-auto text-sm mb-8">
+        Atendemos en tu ciudad con logística y costos de acuerdo a la distancia.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="px-6 py-3 rounded-full bg-brand-navy border border-brand-lime text-white font-bold flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4 text-brand-lime"></i> Ambato
+        </span>
+        <span class="px-6 py-3 rounded-full bg-brand-navy border border-brand-lime text-white font-bold flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4 text-brand-lime"></i> Riobamba
+        </span>
+        <span class="px-6 py-3 rounded-full bg-brand-navy border border-brand-lime text-white font-bold flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4 text-brand-lime"></i> Puyo
+        </span>
+        <span class="px-6 py-3 rounded-full bg-slate-900 border border-slate-700 text-slate-300 font-medium flex items-center gap-2">
+          <i data-lucide="truck" class="w-4 h-4 text-brand-cyan"></i> Otras Ciudades del País
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-black py-12 border-t border-slate-900 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="img/logo.jpg" alt="AeroClean EC" class="h-10 w-auto rounded">
+        <div>
+          <div class="text-base font-black text-white">AEROCLEAN EC</div>
+          <p class="text-xs text-slate-500">Más que limpieza, es protección.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="https://instagram.com/AeroCleanEC" target="_blank" class="flex items-center gap-2 hover:text-brand-lime transition-colors">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+          <span>@AeroCleanEC</span>
+        </a>
+        <a href="https://wa.me/593981627500" class="flex items-center gap-2 hover:text-brand-cyan transition-colors">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          <span>+593 98 162 7500</span>
+        </a>
+      </div>
+
+      <div class="text-xs text-slate-600">
+        © 2026 AeroClean EC. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/593981627500?text=Hola%20AeroClean%20EC,%20deseo%20información%20de%20sus%20servicios" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform glow-lime">
+    <i data-lucide="message-square" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Script de la calculadora -->
+  <script>
+    lucide.createIcons();
+
+    const metrosRange = document.getElementById('metrosRange');
+    const valorMetros = document.getElementById('valorMetros');
+    const tipoServicio = document.getElementById('tipoServicio');
+    const precioEstimado = document.getElementById('precioEstimado');
+    const btnCotizarWsp = document.getElementById('btnCotizarWsp');
+
+    const tarifas = {
+      techo: 0.50,
+      fachada: 0.75,
+      solar: 0.40,
+      industrial: 0.45
+    };
+
+    function calcular() {
+      const m2 = parseInt(metrosRange.value);
+      const tipo = tipoServicio.value;
+      valorMetros.textContent = `${m2} m²`;
+
+      let total = 60;
+      if (tipo === 'techo' && m2 <= 120) {
+        total = 60;
+      } else {
+        total = Math.round(m2 * tarifas[tipo]);
+        if (total < 60) total = 60;
+      }
+
+      precioEstimado.textContent = `$${total} USD`;
+    }
+
+    metrosRange.addEventListener('input', calcular);
+    tipoServicio.addEventListener('change', calcular);
+
+    btnCotizarWsp.addEventListener('click', () => {
+      const m2 = metrosRange.value;
+      const servicio = tipoServicio.options[tipoServicio.selectedIndex].text;
+      const precio = precioEstimado.textContent;
+      
+      const mensaje = `Hola AeroClean EC! Cotización rápida desde la web:%0A- *Servicio:* ${servicio}%0A- *Área:* ${m2} m²%0A- *Presupuesto estimado:* ${precio}%0A¿Podríamos agendar una inspección?`;
+      window.open(`https://wa.me/593981627500?text=${mensaje}`, '_blank');
+    });
+  </script>
+</body>
+</html>
